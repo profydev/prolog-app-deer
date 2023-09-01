@@ -7,5 +7,6 @@ module.exports = {
   // files are specified on the command line, tsconfig.json files are ignored."
   // https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
   "*.{ts,tsx}": () => "npm run check:types",
-  "*": "prettier --ignore-path .gitignore --write",
+  "*.{js,jsx,ts,tsx,css,scss,json,md}":
+    "prettier --ignore-path .gitignore --write",
 };
